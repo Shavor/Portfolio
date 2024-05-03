@@ -1,0 +1,32 @@
+//main: ../style.less
+
+.social {
+    display: flex;
+    margin-bottom: 32px;
+
+    @media @mobile {
+        justify-content: center;
+    }
+
+}
+
+.social__link {
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: transform 0.2s linear;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    &:last-child {
+        margin-right:0;
+    }
+}
+
+.social__link img {
+    width: 41px;
+    height: 41px;
+}
